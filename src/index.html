@@ -18,21 +18,38 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container">
+    <div class="container" style="width: 650px;">
       <div class="row">
         <div class="col-xs-12 col-sm-8 col-sm-push-2">
-          <h1 class="text-center">Pete's Pet Shop</h1>
+          <h1 class="text-center">My Web3 Election</h1>
           <hr/>
           <br/>
+          <div id="loader">
+            <p class="text-center">Loading...</p>
+          </div>
+          <div id="content" style="display: none;">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Votes</th>
+                </tr>
+              </thead>
+              <tbody id="candidatesResults">
+              </tbody>
+            </table>
+          </div>
+          <p id=accountAddress class="text-center"></p>
         </div>
       </div>
 
-      <div id="petsRow" class="row">
+      <!-- <div id="electionRow" class="row"> -->
         <!-- PETS LOAD HERE -->
-      </div>
-    </div>
+      <!-- </div>
+    </div> -->
 
-    <div id="petTemplate" style="display: none;">
+    <!-- <div id="petTemplate" style="display: none;">
       <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="panel panel-default panel-pet">
           <div class="panel-heading">
@@ -48,7 +65,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
